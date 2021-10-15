@@ -14,7 +14,6 @@ public class Screen extends BitMap{
 		test = new BitMap(50, 50);
 		for(int i = 0; i < test.pixels.length; i++)
 			test.pixels[i] = r.nextInt();
-		
 			perspectiveVision = new BitMap3D(width, height);
 	}
 	
