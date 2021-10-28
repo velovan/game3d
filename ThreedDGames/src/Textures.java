@@ -18,7 +18,6 @@ public class Textures {
 			for(int i = 0; i < res.pixels.length; i++){
 				res.pixels[i] = res.pixels[i] & 0xffffff; //To delete Alpha: 0x'ff'ffffff
 			}
-			
 			return res;
 			
 		} catch (IOException e) {
@@ -26,6 +25,5 @@ public class Textures {
 			e.printStackTrace();
 		}
 		return null;
-
 	}	
 }
