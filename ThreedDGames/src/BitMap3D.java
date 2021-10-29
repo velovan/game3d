@@ -50,16 +50,15 @@ public class BitMap3D extends BitMap{
 	    	   if(yy < 0){
 	    		   yPix--;
 	    	   }
-	    	   
 	    	   depthBuffer[x + y * width] = zd; 
          	   pixels[x + y * width] = Textures.floor.pixels[(xPix & 15) + 16 | (yPix & 15) * Textures.floor.width];
-	       }
+	           }
 		} 
 		renderWall(0,2,1,2);
 		
 	}
 	
-	public void renderWall(double x0,double y0,double x1,double y1){ // Ñò³íà
+	public void renderWall(double x0,double y0,double x1,double y1){ // Ã‘Ã²Â³Ã­Ã 
 		
 			double xo0 = x0 - 0.5 - xCam * 2;
 			double u0  = -0.5 + zCam / 4; 
