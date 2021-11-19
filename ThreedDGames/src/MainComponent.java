@@ -117,10 +117,8 @@ public class MainComponent extends Canvas implements Runnable {
 		   }
 		   
 		  g.drawImage(image, 0, 0, WIDTH * SCALE, HEIGHT * SCALE, null);
-		   
-		   g.dispose();
-		   
-		   bs.show();
+		  g.dispose();
+		  bs.show();
 	}
 	
 	public void update(){
@@ -133,8 +131,7 @@ public class MainComponent extends Canvas implements Runnable {
 		if(!isRunning)
 		   return;
 		
-		isRunning = false;
-		
+		isRunning = false;	
 	}
 	
 	public void dispose(){
