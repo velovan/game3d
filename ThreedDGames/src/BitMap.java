@@ -23,7 +23,6 @@ public class BitMap {
 			continue;
 		    
 			for(int x = 0; x < b.width; x++){
-				
 				int xx = x + ox;
 			    if(xx < 0 || xx >= width)
 				continue;
@@ -38,11 +37,9 @@ public class BitMap {
 	}
 	
 	public void clear(){
-		
-		for(int i = 0; i < pixels.length; i++){
-		
-			pixels[i] = 0;
-		}
+	  for(int i = 0; i < pixels.length; i++){
+	   pixels[i] = 0;
+	   }
 	}
 	
 }
