@@ -5,7 +5,6 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
-
 import javax.swing.JFrame;
 
 public class MainComponent extends Canvas implements Runnable {
@@ -21,10 +20,10 @@ public class MainComponent extends Canvas implements Runnable {
 	private boolean isRunning = false;
 	
 	public  final BufferedImage image;
-    public  final int [] pixels;
+        public  final int [] pixels;
 			
-    private Game game;
-    private Screen screen;
+        private Game game;
+        private Screen screen;
 	
 	public MainComponent(){
 		Dimension d = new Dimension(WIDTH * SCALE, HEIGHT * SCALE);
