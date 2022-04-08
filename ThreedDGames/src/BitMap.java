@@ -11,25 +11,19 @@ public class BitMap {
 		this.height = height;
 		
 		pixels = new int [width * height];
-		
 	}
 	
 	public void render(BitMap b, int ox, int oy){
 		
-		for(int y = 0; y < b.height; y ++){
-		
+		for(int y = 0; y < b.height; y ++){	
 		    int yy = y + oy;
 		    if(yy < 0 || yy >= height)
 			continue;
-		    
 			for(int x = 0; x < b.width; x++){
 				int xx = x + ox;
 			    if(xx < 0 || xx >= width)
-				continue;
-				
-			    
-			    int alpha = b.pixels[x + y * b.width];
-			    
+				continue;							    
+			    int alpha = b.pixels[x + y * b.width];			    
 			    if(alpha > 0)
 			    pixels[xx + yy * width] = alpha;
 			}
