@@ -9,7 +9,7 @@ public class BitMap3D extends BitMap{
     private double[] depthBuffer;
 	private double xCam, yCam, zCam, rot, rSin, rCos, fov;
 	
-	public BitMap3D(int width, int height) {
+	public BitMap3D(int width, int height){
 		super(width, height);
 		depthBuffer = new double[width* height];
 	}
@@ -58,7 +58,7 @@ public class BitMap3D extends BitMap{
 		
 	}
 	
-	public void renderWall(double x0,double y0,double x1,double y1){ // Ñò³íà
+	public void renderWall(double x0,double y0,double x1,double y1){
 		
 			double xo0 = x0 - 0.5 - xCam * 2;
 			double u0  = -0.5 + zCam / 4; 
