@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 
-public class MainComponent extends Canvas implements Runnable {
+public class MainComponent extends Canvas implements Runnable{
 
 	private static final long serialVersionVid = 1L;
 	
@@ -35,15 +35,12 @@ public class MainComponent extends Canvas implements Runnable {
 		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
 	}
 
-	public void start() {
-		if(isRunning)
-			return;	
-	
-	    isRunning = true;
-	    
-	 init();
-	 new Thread(this).start();
-	 
+	public void start(){
+	    if(isRunning)
+	    return;	
+	    isRunning = true;    
+	    init();
+	 new Thread(this).start(); 
 	}  
 	
 	
@@ -69,17 +66,16 @@ public class MainComponent extends Canvas implements Runnable {
 	   while(isRunning){
 		   
 		   long currentTime = System.nanoTime();
-    	   long passedTime = currentTime - lastTime;
+    	           long passedTime = currentTime - lastTime;
 		   lastTime = currentTime;
 		   unprocessedTime += passedTime;
 		    
 		   if(unprocessedTime >= nsPerUpdate){
-	       unprocessedTime = 0;
+	           unprocessedTime = 0;
 			
 			   update();
 			   updates++;
-		   }
-		   
+		   }		   
 		      render();
 		      frames++;
 		  
@@ -109,8 +105,7 @@ public class MainComponent extends Canvas implements Runnable {
 		  }
 		   
 		   Graphics g = bs.getDrawGraphics();
-		   screen.render(game);
-		   
+		   screen.render(game);		   
 		   for(int i = 0; i <  pixels.length; i++){
 			   pixels[i] = screen.pixels[i];
 		   }
@@ -125,16 +120,13 @@ public class MainComponent extends Canvas implements Runnable {
 		screen.update();
 	}
 	
-	public void stop(){
-		
+	public void stop(){		
 		if(!isRunning)
-		   return;
-		
+		   return;		
 		isRunning = false;	
 	}
 	
-	public void dispose(){
-		
+	public void dispose(){		
 		System.exit(0);
 	}
 	
