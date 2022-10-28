@@ -3,7 +3,7 @@ import java.util.Random;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
-public class BitMap3D extends BitMap{
+public class BitMap3D extends BitMap {
 
 
     private double[] depthBuffer;
@@ -14,7 +14,7 @@ public class BitMap3D extends BitMap{
 		depthBuffer = new double[width* height];
 	}
     
-	public void render(Game game){
+	public void render(Game game) {
 		fov = height;
 		
 //		xCam = game.time % 100.0 / 50;
