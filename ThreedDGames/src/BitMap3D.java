@@ -122,9 +122,9 @@ public class BitMap3D extends BitMap {
 	    }
 	}
 	
-    public void drawFloor(double xx, double yy, double yd, int x, int y, int xPix, int yPix, int pX, int pY){
+    public void drawFloor(double xx, double yy, double yd, int x, int y, int xPix, int yPix, int pX, int pY) {
 		
-   	  if(yd >= 0 && xx >= pX * 16 && xx < pX * 16 + 16 && yy >= pY * 16 && yy < pY * 16 + 16){
+   	  if(yd >= 0 && xx >= pX * 16 && xx < pX * 16 + 16 && yy >= pY * 16 && yy < pY * 16 + 16) {
    		   pixels[x + y * width] = Textures.floor.pixels[(xPix & 15) + 16 | (yPix & 15) * Textures.floor.width];
    	     }
      }
@@ -136,9 +136,9 @@ public class BitMap3D extends BitMap {
  		}
     }
     
-    public void renderFog(){
+    public void renderFog() {
 
-		for(int i = 0; i < depthBuffer.length; i++){
+		for(int i = 0; i < depthBuffer.length; i++) {
 			
 			int color = pixels[i];
 			int r = (color >> 16)& 0xff;
