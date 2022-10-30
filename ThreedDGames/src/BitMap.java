@@ -1,11 +1,11 @@
 
-public class BitMap {
+public class BitMap{
 
 	public int width;
 	public int height;
 	public int [] pixels;
 	
-	public BitMap(int width, int height){
+	public BitMap(int width, int height) {
 		
 		this.width = width;
 		this.height = height;
@@ -13,8 +13,7 @@ public class BitMap {
 		pixels = new int [width * height];
 	}
 	
-	public void render(BitMap b, int ox, int oy){
-		
+	public void render(BitMap b, int ox, int oy) {
 		for(int y = 0; y < b.height; y ++){	
 		    int yy = y + oy;
 		    if(yy < 0 || yy >= height)
@@ -30,7 +29,7 @@ public class BitMap {
 		}
 	}
 	
-	public void clear(){
+	public void clear() {
 	  for(int i = 0; i < pixels.length; i++){
 	   pixels[i] = 0;
 	   }
