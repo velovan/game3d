@@ -9,12 +9,12 @@ public class BitMap3D extends BitMap{
     private double[] depthBuffer;
 	private double xCam, yCam, zCam, rot, rSin, rCos, fov;
 	
-	public BitMap3D(int width, int height) {
+	public BitMap3D(int width, int height){
 		super(width, height);
 		depthBuffer = new double[width* height];
 	}
     
-	public void render(Game game){
+	public void render(Game game) {
 		fov = height;
 		
 //		xCam = game.time % 100.0 / 50;
