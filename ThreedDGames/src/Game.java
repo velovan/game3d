@@ -2,10 +2,10 @@
 public class Game {
 
 	public int time;
-	public void Game() {	
+	public void Game(){	
 	}
 	
-	public void update() {
+	public void update(){
            time++;
 	}	
 }
