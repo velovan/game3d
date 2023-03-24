@@ -13,12 +13,12 @@ public class BitMap {
 		pixels = new int [width * height];
 	}
 	
-	public void render(BitMap b, int ox, int oy){
+	public void render(BitMap b, int ox, int oy) {
 		for(int y = 0; y < b.height; y ++){	
 		    int yy = y + oy;
 		    if(yy < 0 || yy >= height)
 			continue;
-			for(int x = 0; x < b.width; x++){
+			for(int x = 0; x < b.width; x++) {
 				int xx = x + ox;
 			    if(xx < 0 || xx >= width)
 				continue;							    
