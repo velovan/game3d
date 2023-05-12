@@ -1,13 +1,13 @@
 import java.util.Random;
 
-public class Screen extends BitMap {
+public class Screen extends BitMap{
 
 	public Random r = new Random();
 	
 	public BitMap test;
 	public BitMap3D perspectiveVision;
 	
-	public Screen(int width, int height) {
+	public Screen(int width, int height){
 		super(width, height);	
 		test = new BitMap(50, 50);
 		for(int i = 0; i < test.pixels.length; i++)
