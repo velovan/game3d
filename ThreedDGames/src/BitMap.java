@@ -1,5 +1,5 @@
 
-public class BitMap {
+public class BitMap{
 
 	public int width;
 	public int height;
