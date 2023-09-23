@@ -3,11 +3,11 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Textures {
+public class Textures{
 	
 	public static BitMap floor = loadTexture("/textures/floors.png");
 	
-	public static BitMap loadTexture(String path){	
+	public static BitMap loadTexture(String path) {	
 		try {
 		    BufferedImage image = ImageIO.read(Textures.class.getResourceAsStream(path));
 			BitMap res = new BitMap(image.getWidth(),image.getHeight());
