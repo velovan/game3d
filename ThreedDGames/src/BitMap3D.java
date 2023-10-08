@@ -3,7 +3,7 @@ import java.util.Random;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
-public class BitMap3D extends BitMap {
+public class BitMap3D extends BitMap{
 
     private double[] depthBuffer;
 	private double xCam, yCam, zCam, rot, rSin, rCos, fov;
