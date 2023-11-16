@@ -5,7 +5,7 @@ public class BitMap{
 	public int height;
 	public int [] pixels;
 	
-	public BitMap(int width, int height){
+	public BitMap(int width, int height) {
 		
 		this.width = width;
 		this.height = height;
