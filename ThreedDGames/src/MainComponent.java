@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 
-public class MainComponent extends Canvas implements Runnable{
+public class MainComponent extends Canvas implements Runnable {
 
 	private static final long serialVersionVid = 1L;
 	
