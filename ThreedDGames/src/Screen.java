@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Screen extends BitMap {
+public class Screen extends BitMap{
 
 	public Random r = new Random();
 	
