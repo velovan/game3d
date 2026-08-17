@@ -15,7 +15,7 @@ public class Screen extends BitMap{
 		  perspectiveVision = new BitMap3D(width, height);
 	}
 	
-	public void render(Game game) {		
+	public void render(Game game){		
 		clear();
 		perspectiveVision.render(game);
 		perspectiveVision.renderFog();
